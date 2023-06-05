@@ -21,13 +21,13 @@
                     <nav>
                         <ul class="d-flex">
                             <li>
-                                 <a href="#">CHARACTERS</a>
+                                 <a  href="#">CHARACTERS</a>
                             </li>
                             <li>
                                  <a href="#">COMICS</a>
                             </li>
                             <li>
-                                 <a href="#">MOVIES</a>
+                                 <a class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{ route('movies') }}">MOVIES</a>
                             </li>
                             <li>
                                  <a href="#">TV</a>
