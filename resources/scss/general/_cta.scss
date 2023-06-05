@@ -1,0 +1,21 @@
+@use './variables' as *;
+    #cta{
+        background-color: $color_blue;
+        color: $color_white;
+        height: 200px;
+    }
+
+    .cta-image{
+        img{
+            height: 70px;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+    }
+
+    .cta-text{
+        span{
+            padding-left: 10px;
+            font-size: 14px;
+        }
+    }

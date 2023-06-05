@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <div class="header-container d-flex justify-content-between">
+        <div class="mc-container">
+            <div class="header-container d-flex-space-bet">
 
                 <!-- Logo -->
                 <div class="image">
-                    <img src="../assets/img/dc-logo.png" alt="dc-logo">
+                    <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc-logo">
                 </div>
 
                 <!-- Links -->
@@ -21,16 +21,34 @@
                     <nav>
                         <ul class="d-flex">
                             <li>
-                                 <a href="#">LINK</a>
+                                 <a href="#">CHARACTERS</a>
                             </li>
                             <li>
-                                 <a href="#">LINK</a>
+                                 <a href="#">COMICS</a>
                             </li>
                             <li>
-                                 <a href="#">LINK</a>
+                                 <a href="#">MOVIES</a>
                             </li>
                             <li>
-                                 <a href="#">LINK</a>
+                                 <a href="#">TV</a>
+                            </li>
+                            <li>
+                                 <a href="#">GAMES</a>
+                            </li>
+                            <li>
+                                 <a href="#">COLLECTIBLES</a>
+                            </li>
+                            <li>
+                                 <a href="#">VIDEOS</a>
+                            </li>
+                            <li>
+                                 <a href="#">FANS</a>
+                            </li>
+                            <li>
+                                 <a href="#">NEWS</a>
+                            </li>
+                            <li>
+                                 <a href="#">SHOP</a>
                             </li>
                         </ul>
                     </nav>

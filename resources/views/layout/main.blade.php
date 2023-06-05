@@ -13,22 +13,77 @@
         @include('partials.header')
         <div class="main-wrapper">
             <main>
-                <div class="container">
-                    <div class="row">
-                        <div class="col text-center">
+                {{-- Jumbotron --}}
+                <div class="jumbotron"></div>
 
-                            <div class="card">
-                                <div class="card-body">
-                                    <img src="{{ Vite::asset('resources/img/laravel.png') }}" alt="">
+                <div class="wrapper">
+                    <div class="mc-container h-100">
+                      <h2>CURRENT SERIES</h2>
 
-                                    <h1 class="card-title">Laravel 9 + Bootstrap Template</h1>
+                      @yield('content')
+                    </div>
+                </div>
+
+                {{-- CTA --}}
+                <section id="cta">
+
+                    <div class="container h-100">
+
+                        <div class="row d-flex-space-bet h-100">
+
+                            <!-- Single card -->
+                            <div class="col d-flex-cont-center-items-center">
+                                <div class="cta-image">
+                                    <img src=" {{Vite::asset('resources/img/buy-comics-digital-comics.png') }}" alt="">
+                                </div>
+                                <div class="cta-text">
+                                    <span>DIGITAL COMICS</span>
                                 </div>
                             </div>
 
-                            @yield('content')
+
+                            <div class="col d-flex-cont-center-items-center">
+                                <div class="cta-image">
+                                    <img src="{{ Vite::asset('resources/img/buy-comics-merchandise.png') }}" alt="">
+                                </div>
+                                <div class="cta-text">
+                                    <span>DC MERCHANDISE</span>
+                                </div>
+                            </div>
+
+
+                            <div class="col d-flex-cont-center-items-center">
+                                <div class="cta-image">
+                                    <img src="{{ Vite::asset('resources/img/buy-comics-subscriptions.png') }}" alt="">
+                                </div>
+                                <div class="cta-text">
+                                    <span>SUBSCRIPTION</span>
+                                </div>
+                            </div>
+
+
+                            <div class="col d-flex-cont-center-items-center">
+                                <div class="cta-image">
+                                    <img src="{{ Vite::asset('resources/img/buy-comics-shop-locator.png') }}" alt="">
+                                </div>
+                                <div class="cta-text">
+                                    <span>COMIC SHOP LOCATION</span>
+                                </div>
+                            </div>
+
+
+                            <div class="col d-flex-cont-center-items-center">
+                                <div class="cta-image">
+                                    <img src="{{ Vite::asset('resources/img/buy-dc-power-visa.svg') }}" alt="">
+                                </div>
+                                <div class="cta-text">
+                                    <span>DC POWER VISA</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+                </section>
             </main>
         </div>
 

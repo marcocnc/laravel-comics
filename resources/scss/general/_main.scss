@@ -1,0 +1,18 @@
+@use './variables' as *;
+
+.wrapper{
+    background-color: #1C1C1C;
+    height: 95vh;
+  .mc-container{
+    position: relative;
+
+      h2{
+        color: $color_white;
+        background-color:  $color_blue;
+        padding: 10px 15px;
+        position: absolute;
+        top: -30px;
+        cursor: pointer;
+      }
+  }
+}

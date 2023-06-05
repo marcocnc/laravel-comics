@@ -1,6 +1,19 @@
-@use "./general/header" as *;
 @use "./general/variables" as *;
+@use "./general/utilities" as *;
+@use "./general/header" as *;
+@use "./general/jumbotron" as *;
+@use "./general/main" as *;
+@use "./general/cta" as *;
+
+
 @import "~bootstrap/scss/bootstrap";
+
+.mc-container{
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
 
 .main-wrapper{
     height: 100vh;
