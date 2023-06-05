@@ -1,0 +1,41 @@
+@use './variables' as *;
+
+.card-wrapper{
+    flex-wrap: wrap;
+    .mc-card{
+        width: calc(100% / 6);
+        padding: 50px 20px 0 20px;
+
+        img{
+          width: 100%;
+          height: 170px;
+        }
+
+        .title-card{
+          padding-top: 15px;
+
+          a{
+          color: $color_white;
+          font-size: 14px;
+
+          &:hover{
+            text-decoration: underline;
+          }
+          }
+        }
+      }
+
+
+
+
+    }
+    #load-more{
+        width: 100%;
+        span{
+          margin-top: 40px;
+          background-color: $color_blue;
+          color: $color_white;
+          padding: 10px 45px;
+          cursor: pointer;
+        }
+    }
