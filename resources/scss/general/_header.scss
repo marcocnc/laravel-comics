@@ -1,0 +1,35 @@
+header{
+    height: 100px;
+    padding: 20px 0;
+}
+
+.header-container{
+    height: 100%;
+}
+
+// Image
+.image{
+    img{
+        height: 70px;
+        width: 70px;
+        object-fit: cover;
+    }
+}
+
+// Links style
+.h-link{
+    height: 100%;
+
+    ul{
+        height: 100%;
+    }
+
+    li{
+        height: 100%;
+        padding: 0 15px;
+    }
+
+    a{
+        font-weight: bold;
+    }
+}

@@ -1,20 +1,24 @@
+@use "./general/header" as *;
+@use "./general/variables" as *;
 @import "~bootstrap/scss/bootstrap";
 
-.row {
-    > * {
-        height: 100vh;
+.main-wrapper{
+    height: 100vh;
+}
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        color: lightcoral;
-        background-color: aquamarine;
-        background-image: url('../img/laravel.png');
-        background-size: 50px 50px;
+ul{
+    li{
+        list-style: none;
     }
 }
 
-img {
-    max-height: 150px;
+a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.active{
+    color: $color_blue;
+    border-bottom: 5px solid $color_blue;
+    padding-bottom: 30.5px;
 }
