@@ -1,3 +1,8 @@
+@php
+    $header_menu = config('menus.header_menu')
+@endphp
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,35 +26,14 @@
                     <nav>
                         <ul class="d-flex">
                             <li>
-                                 <a  href="#">CHARACTERS</a>
-                            </li>
-                            <li>
-                                 <a href="#">COMICS</a>
-                            </li>
-                            <li>
-                                 <a class="{{ Route::currentRouteName() === 'movies' ? 'active' : '' }}" href="{{ route('movies') }}">MOVIES</a>
-                            </li>
-                            <li>
-                                 <a href="#">TV</a>
-                            </li>
-                            <li>
-                                 <a href="#">GAMES</a>
-                            </li>
-                            <li>
-                                 <a href="#">COLLECTIBLES</a>
-                            </li>
-                            <li>
-                                 <a href="#">VIDEOS</a>
-                            </li>
-                            <li>
-                                 <a href="#">FANS</a>
-                            </li>
-                            <li>
-                                 <a href="#">NEWS</a>
-                            </li>
-                            <li>
-                                 <a href="#">SHOP</a>
-                            </li>
+                                <a class="{{ Route::currentRouteName() === 'home' ? 'active' : '' }}" href="{{route('home')}}">HOME</a>
+                           </li>
+
+                            @foreach ($header_menu as $item)
+                                <li>
+                                    <a class="{{ Route::currentRouteName() === $item['name'] ? 'active' : '' }}" href="{{route($item['name'])}}">{{ $item['text'] }}</a>
+                                </li>
+                            @endforeach
                         </ul>
                     </nav>
                 </div>

@@ -1,0 +1,28 @@
+@use "./variables" as *;
+.mc-container{
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.main-wrapper{
+    height: 100vh;
+}
+
+ul{
+    li{
+        list-style: none;
+    }
+}
+
+a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.active{
+    color: $color_blue;
+    border-bottom: 5px solid $color_blue;
+    padding-bottom: 38.5px;
+}

@@ -18,11 +18,55 @@ Route::get('/', function () {
 })->name('home');
 
 
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
+
+
 Route::get('/movies', function () {
-
-    $db_movies = config('comics');
-
-    return view('movies', compact('db_movies'));
+    return view('movies');
 })->name('movies');
 
+
+Route::get('/comics', function () {
+
+    $db_comics = config('comics');
+
+    return view('comics', compact('db_comics'));
+})->name('comics');
+
+
+Route::get('/tv', function () {
+    return view('tv');
+})->name('tv');
+
+
+Route::get('/games', function () {
+    return view('games');
+})->name('games');
+
+
+Route::get('/collectibles', function () {
+    return view('collectibles');
+})->name('collectibles');
+
+
+Route::get('/videos', function () {
+    return view('videos');
+})->name('videos');
+
+
+Route::get('/fans', function () {
+    return view('fans');
+})->name('fans');
+
+
+Route::get('/news', function () {
+    return view('news');
+})->name('news');
+
+
+Route::get('/shop', function () {
+    return view('shop');
+})->name('shop');
 

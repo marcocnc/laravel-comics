@@ -1,4 +1,5 @@
 @use "./general/variables" as *;
+@use "./general/general" as *;
 @use "./general/utilities" as *;
 @use "./general/header" as *;
 @use "./general/jumbotron" as *;
@@ -9,30 +10,6 @@
 
 @import "~bootstrap/scss/bootstrap";
 
-.mc-container{
-    width: 70%;
-    max-width: 1200px;
-    margin: 0 auto;
 
-}
 
-.main-wrapper{
-    height: 100vh;
-}
 
-ul{
-    li{
-        list-style: none;
-    }
-}
-
-a{
-    text-decoration: none;
-    font-size: 12px;
-}
-
-.active{
-    color: $color_blue;
-    border-bottom: 5px solid $color_blue;
-    padding-bottom: 38.5px;
-}
