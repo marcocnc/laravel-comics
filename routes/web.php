@@ -70,3 +70,10 @@ Route::get('/shop', function () {
     return view('shop');
 })->name('shop');
 
+
+Route::get('/details', function () {
+
+
+    return view('details');
+})->name('details');
+
