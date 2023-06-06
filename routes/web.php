@@ -71,9 +71,13 @@ Route::get('/shop', function () {
 })->name('shop');
 
 
-Route::get('/details', function () {
+Route::get('/details/{slug}', function ($slug) {
 
+    $db_comics = config('comics');
 
-    return view('details');
+    $comics_arr = array_filter($db_comics, fn($comics) => $comics['slug'] === $slug);
+
+    $comic = $comics_arr[array_key_first($comics_arr)];
+    return view('details', compact('comic'));
 })->name('details');
 

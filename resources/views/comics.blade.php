@@ -21,7 +21,7 @@
                     <img src="{{ $comics['thumb'] }}">
 
                     <div class="title-card">
-                        <a href="#">{{ strtoupper($comics['title']) }}</a>
+                        <a href="{{ route('details', ['slug' => $comics['slug']]) }}">{{ strtoupper($comics['title']) }}</a>
                     </div>
                 </div>
             @endforeach
