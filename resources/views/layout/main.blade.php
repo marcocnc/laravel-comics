@@ -18,7 +18,7 @@
 
                 <div class="wrapper">
                     <div class="mc-container h-100">
-                      <h2>CURRENT SERIES</h2>
+                      <h2 class="current-series">CURRENT SERIES</h2>
 
                       @yield('content')
                     </div>

@@ -21,10 +21,11 @@
                 </div>
 
                 <div class="comic-content text-white ps-4">
-                    <h3>{{ $comic['title'] }}</h3>
-                    <h4>{{$comic['price']}}</h4>
-                    <h5>{{$comic['series']}}</h5>
-                    <p>{{$comic['description']}}</p>
+                    <h3 class="pb-2">{{ strtoupper($comic['title']) }}</h3>
+                    <h5 class="pb-2">{{$comic['series']}}</h5>
+                    <p class="pb-2">{{$comic['description']}}</p>
+                    <h2 class="text-center pb-2">Acquista ora!</h2>
+                    <h4 class="btn btn-success w-100 fs-2">{{$comic['price']}}</h4>
                 </div>
             </div>
 
