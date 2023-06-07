@@ -16,15 +16,15 @@
         <div class="card-wrapper d-flex">
 
             @foreach ($db_comics as $comics)
-                <div class="mc-card">
 
-                    <img src="{{ $comics['thumb'] }}">
+                @include('partials.card',
+                    [
+                        'href' => route('details', ['slug' => $comics['slug']]),
+                        'thumb' => $comics['thumb'],
+                        'title' => $comics['title']
 
-                    <div class="title-card">
-                        <a href="{{ route('details', ['slug' => $comics['slug']]) }}">{{ strtoupper($comics['title']) }}</a>
-                    </div>
-                </div>
-            @endforeach
+                    ])
+                @endforeach
 
             <!-- Button -->
 
@@ -32,8 +32,9 @@
         <div id="load-more" class="d-flex-cont-center-items-center mb-5">
             <span>LOAD MORE</span>
         </div>
-    @endsection
+        @endsection
 
-</body>
+    </body>
 
-</html>
+    </html>
+
